@@ -1,6 +1,6 @@
 <template>
-  <div class="task rounded px-2 py-1 cursor-pointer d-flex justify-content-between">
-    <div v-if="!isEditabe" class="form-check">
+  <div class="task rounded ps-2 py-1 pe-4 cursor-pointer d-flex justify-content-between">
+    <div v-if="!isEditabe" class="form-check text-break">
       <input
         class="form-check-input cursor-pointer"
         type="checkbox"
@@ -102,19 +102,25 @@ export default {
 .task {
   border: 1px solid transparent;
   transition: all 0.2s ease;
+  position: relative;
   &:hover {
     border-color: #0d6efd;
   }
   &__cross {
     transition: all 0.3s ease;
     opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translate(0, -50%);
     &:hover {
-      transform: rotate(-90deg);
+      transform: translate(0, -50%) rotate(-90deg);
       opacity: 1;
     }
   }
   &__input {
     padding: 0 8px;
+    padding-right: 45px;
     font-size: 0.875rem;
 
     &__cross {
