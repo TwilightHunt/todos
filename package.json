@@ -2,7 +2,7 @@
   "name": "todo",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "homepage": "https://twilighthunt.github.io/css-training-sandbox",
+  "homepage": "https://twilighthunt.github.io/todos/",
   "author": "Vera Lavrentyeva <55912590+TwilightHunt@users.noreply.github.com>",
   "private": true,
   "scripts": {
